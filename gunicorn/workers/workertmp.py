@@ -18,6 +18,7 @@ else:
 class WorkerTmp(object):
 
     def __init__(self, cfg):
+        print "omg, whats going on?"
         old_umask = os.umask(cfg.umask)
         fd, name = tempfile.mkstemp(prefix="wgunicorn-")
 
